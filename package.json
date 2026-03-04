@@ -1,0 +1,15 @@
+{
+  "name": "whatsapp-ai-chatbot-webapp",
+  "version": "1.0.0",
+  "description": "Full-stack WhatsApp AI chatbot web app with conversation history and broadcast messaging",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
