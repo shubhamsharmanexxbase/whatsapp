@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp AI Chatbot Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WhatsApp AI Chatbot Dashboard</h1>
+      <p>Connected business number inbox + AI replies + broadcast messaging</p>
+    </header>
+
+    <main class="layout">
+      <section class="panel conversations-panel">
+        <h2>Conversations</h2>
+        <div id="conversationList" class="conversation-list"></div>
+      </section>
+
+      <section class="panel chat-panel">
+        <h2 id="chatTitle">Messages</h2>
+        <div id="messages" class="messages"></div>
+        <form id="sendForm" class="send-form">
+          <input id="messageInput" placeholder="Type message to selected chat" required />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <section class="panel broadcast-panel">
+        <h2>Broadcast</h2>
+        <form id="broadcastForm" class="broadcast-form">
+          <label>
+            Recipients (comma-separated WhatsApp numbers)
+            <textarea id="recipientsInput" rows="4" placeholder="15550000001,15550000002" required></textarea>
+          </label>
+          <label>
+            Message
+            <textarea id="broadcastMessage" rows="4" placeholder="Hello from our business!" required></textarea>
+          </label>
+          <button type="submit">Send Broadcast</button>
+        </form>
+        <pre id="broadcastResult"></pre>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
